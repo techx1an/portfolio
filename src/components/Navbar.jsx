@@ -43,7 +43,7 @@ function Navbar() {
             </li>
 
             <li className="group px-10 opacity-80 hover:backdrop-opacity-100 transition-opacity">
-              <a href="#project" onClick={() => setIsMenuOpen(false)}>
+              <a href="#projects" onClick={() => setIsMenuOpen(false)}>
                 <span className="text-lg">Projects</span>
               </a>
             </li>
