@@ -33,14 +33,16 @@ function About() {
           </h1>
 
           <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center md:text-left bg-gradient-to-r from-blue-400 via-sky-400 to-blue-600 text-transparent bg-clip-text">
-            Web Developer
+            Graphic Designer
           </h3>
 
           <p className="text-sm text-slate-400 text-center md:text-left text-pretty">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam amet
-            ea officia nesciunt unde similique pariatur debitis rerum dicta
-            distinctio? Voluptatibus ratione aspernatur eaque facilis
-            consequuntur ab laborum autem in?
+            A highly motivated and organized media assistant with three years of
+            professional experience supporting content creation and media
+            operations. Proven ability to assist with social media management,
+            content scheduling, and administrative tasks, ensuring projects run
+            smoothly and efficiently. Adept at using various media platforms and
+            digital tools to enhance brand presence and audience engagement.
           </p>
 
           <div className="flex gap-5 mt-3">

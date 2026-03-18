@@ -13,15 +13,24 @@ function Project() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
         className="text-4xl sm:text-6xl"
+      ></motion.h1>
+      <h1
+        className="text-4xl sm:text-6xl"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-once="true"
       >
         My Projects
-      </motion.h1>
+      </h1>
 
-      <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.4 }}
+      <div
+        // initial={{ opacity: 0, x: -100 }}
+        // whileInView={{ opacity: 1, x: 0 }}
+        // viewport={{ once: true }}
+        // transition={{ duration: 0.8, delay: 0.4 }}
+        data-aos="fade-right"
+        data-aos-once="true"
+        data-aos-delay="100"
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full"
       >
         {projectData.map((project) => (
@@ -33,11 +42,11 @@ function Project() {
           >
             <img
               src={project.image}
-              className="hover:scale-105 transition-transform duration-300"
+              className="hover:scale-105 transition-transform h-120 md:h-80 duration-300"
               alt=""
             />
 
-            <div className="flex flex-col gap-3 bg-grey-900 p-5 transition-colors duration-300 hover:bg-gray-800 flex-grow">
+            {/* <div className="flex flex-col gap-3 bg-grey-900 p-5 transition-colors duration-300 hover:bg-gray-800 flex-grow">
               <h3 className="text-xl font-semibold">{project.title}</h3>
               <p className="text-sm text-slate-400">{project.description}</p>
               <div className="flex gap-3 flex-wrap mt-auto">
@@ -47,10 +56,10 @@ function Project() {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
           </a>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

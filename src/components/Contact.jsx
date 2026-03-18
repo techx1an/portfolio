@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 function Contact() {
   return (
     <div
@@ -13,7 +14,7 @@ function Contact() {
         transition={{ duration: 0.5, delay: 0.1 }}
         className="max-w-full justify-center flex flex-col items-center mx-auto text-center gap-8 sm:gap-12"
       >
-        <motion.h1
+        {/* <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -21,7 +22,7 @@ function Contact() {
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-center"
         >
           Contact Me
-        </motion.h1>
+        </motion.h1> */}
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -29,11 +30,9 @@ function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-gray-300  text-lg text-center max-w-2xl leading-relaxed"
-        >
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
-          expedita aspernatur eligendi numquam reiciendis repudiandae?
-        </motion.p>
+        ></motion.p>
 
+        <div></div>
         <button className="relative overflow-hidden group bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 px-8 py-4 md:text-lg rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 text-white">
           <span className="relative z-10">Get in Touch</span>
           <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

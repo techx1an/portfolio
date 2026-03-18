@@ -16,3 +16,36 @@
 ::-webkit-scrollbar {
   width: 20px;
 }
+
+@layer utilities {
+  /* experience */
+  .cart {
+    @apply mx-auto md:mx-0 rounded-2xl w-100 p-2 hover:shadow-lg pl-1 hover:shadow-blue-800 hover:scale-105 transition-all duration-300 hover:bg-gray-800;
+  }
+  .cart h1 {
+    @apply text-[20px] text-center md:text-start md:text-xl py-2 font-bold bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text;
+  }
+  .cart h4 {
+    @apply text-sm text-center md:text-start;
+  }
+  .cart h2 {
+    @apply text-sm md:text-[16px] font-semibold text-center md:text-start;
+  }
+  .title {
+    @apply p-2;
+  }
+  .content {
+    @apply mt-4 w-100 h-80 px-2;
+  }
+  .content h4 {
+    @apply flex gap-4  mt-2 text-[20px];
+  }
+
+  /* SKills */
+  .icons {
+    @apply relative w-40 md:w-50 bg-gray-800 hover:shadow-lg hover:shadow-blue-800 transition-all hover:scale-105 duration-300 text-7xl md:text-[100px] m-auto justify-center flex items-center rounded-2xl h-40 md:h-50;
+  }
+  .label {
+    @apply absolute text-sm text-center w-full bottom-5 font-semibold ;
+  }
+}

@@ -19,9 +19,19 @@ function Navbar() {
           <li className="opacity-70 hover:opacity-100 transition-opacity duration-300">
             <a href="#about">About</a>
           </li>
+
+          <li className="opacity-70 hover:opacity-100 transition-opacity duration-300">
+            <a href="#experience">Experience</a>
+          </li>
+
+          <li className="opacity-70 hover:opacity-100 transition-opacity duration-300">
+            <a href="#skill">Skill</a>
+          </li>
+
           <li className="opacity-70 hover:opacity-100 transition-opacity duration-300">
             <a href="#projects">Projects</a>
           </li>
+
           <li className="opacity-70 hover:opacity-100 transition-opacity duration-300">
             <a href="#contact">Contact</a>
           </li>
@@ -39,6 +49,18 @@ function Navbar() {
             <li className="group px-10 opacity-80 hover:backdrop-opacity-100 transition-opacity">
               <a href="#about" onClick={() => setIsMenuOpen(false)}>
                 <span className="text-lg">About</span>
+              </a>
+            </li>
+
+            <li className="group px-10 opacity-80 hover:backdrop-opacity-100 transition-opacity">
+              <a href="#experience" onClick={() => setIsMenuOpen(false)}>
+                <span className="text-lg">My Experience</span>
+              </a>
+            </li>
+
+            <li className="group px-10 opacity-80 hover:backdrop-opacity-100 transition-opacity">
+              <a href="#skill" onClick={() => setIsMenuOpen(false)}>
+                <span className="text-lg">My Skills</span>
               </a>
             </li>
 
